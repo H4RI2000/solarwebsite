@@ -1,0 +1,401 @@
+*{
+    scroll-behavior: smooth;
+}
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body{
+
+  
+    background-color: #0d0d0d;
+    color: #ffffff;
+    
+
+}
+header{
+    display: flex;
+    justify-content:space-evenly ;
+    padding: 5px 0px;
+    background-color:#1c1c1c00;
+    color: white;
+    backdrop-filter: blur(6px);
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    font-family: "poppins";
+
+}
+.header h1{
+    margin: 0;
+    font-size: 32px;
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-left: 200px;
+    padding: 0;
+}
+nav ul li{
+    margin-left: 60px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+
+}
+nav ul a:hover{
+    color:  #ff6f61;
+    transition: .5s;
+    cursor: pointer;
+}
+.intro{
+    background-image: url('solar-system-wallpapers.jpg');
+    color: white;
+    text-align: center;
+    height: 700px;
+    padding: 80px 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "poppins";
+}
+.intro h2{
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 13%;
+
+
+}
+.intro p{
+    font-size: 30px;
+
+}
+.solarsystem {
+    padding: 30px;
+    color: #fffdfd;
+    text-align: center;
+    background-color: #424141;
+    font-family: "poppins";
+}
+.solarsystem h2 {
+    color: #f55547;
+    font-size: 40 px;
+    font-family:Arial, Helvetica, sans-serif; 
+    
+}.solarsystem>p{
+    font-size: 20px;
+}
+
+
+.allplanets h2{
+
+    text-align: center;
+    justify-items: center;
+    padding: 25px;
+    font-size: 42px;
+    color: #f55547;
+    text-transform: uppercase;
+    margin-bottom: -70px;
+    font-family: "poppins";
+
+
+
+}
+.planets{
+    width: 100%;
+    height:900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.planet{
+    height: 700px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+
+}
+.card{
+    width: 100px;
+    border-radius: 75rem;
+    background-size: cover;
+    cursor:pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 5px 5px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px #424141; 
+      
+}
+.card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+
+.card > .row > .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 250px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.info p {
+    color: #b0b0ba;
+    margin-bottom: 100px;
+    margin-left: 50px;
+
+}
+
+.info h4 {
+    text-transform: uppercase;
+    margin-left: 50px;
+
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+
+}
+
+input:checked + label .info {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('mercury-planet-wallpapers.jpg') ;
+}
+.card[for="c2"] {
+    background-image: url('venus-planet-wallpapers.jpg');
+}
+.card[for="c3"] {
+    background-image: url('earth-from-space-wallpapers.jpg');
+}
+.card[for="c4"] {
+    background-image: url('mars-wallpapers.jpg');
+
+}
+.card[for="c5"] {
+    background-image: url('jupiter-the-planet-wallpapers.jpg');
+}
+.card[for="c6"] {
+    background-image: url('saturn-wallpaper.jpg');
+}
+.card[for="c7"] {
+    background-image: url('uranus-planet-wallpapers.jpg');
+}
+.card[for="c8"] {
+    background-image: url('neptune-planet-4k-wallpapers.jpg');
+}
+
+.moons{
+    background-image: url('luna.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "poppins";
+
+
+}
+.moons h2{
+    font-size: 50px;
+    padding-top: 38%;
+    margin-left: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.moons p{
+    font-size: 20px;
+    margin-left: 100px;
+
+}
+.card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+  }
+  
+  .crd {
+    width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    padding:20px;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  }
+  .crd:hover {
+    transform: translateY(20px);
+  }
+  .crd:hover:before {
+    opacity: 1;
+  }
+  .crd:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .crd:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .crd img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  .crd .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+  .crd .info h1 {
+    margin: 0px;
+    font-family: "poppins";
+  }
+  .crd .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  .crd .info button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .crd .info button:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+  .asteroids{
+    background-image: url('jAQsygc-asteroid-wallpaper.jpg');
+    color: white;
+    text-align: center;
+    height: 700px;
+    padding: 80px 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "poppins";
+
+}
+.ast{
+    font-size: 70px;
+    margin-top: 300px;
+}
+.ast2{
+    font-size: 20px;
+}
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    background-image: url('footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin-top: -30px;
+
+
+}
+.about{
+    text-align: center;
+    padding-top: 50px;
+    font-family: "poppins";
+}
+.contact{
+    text-align: center;
+    font-family: "poppins";
+}
+.contact ul li{
+    
+    list-style: none;
+}
+.social{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.social ul li{
+    display: inline;
+    justify-content: space-evenly;
+    font-size: 30px;
+    padding: 20px;
+    margin-right: 30px;
+}
+.bottom{
+    margin-top: 40px; 
+    border-top: 5px solid #ffffff; 
+    padding-top: 15px; 
+    font-size: 16px;
+    text-align: center;
+    font-family: "poppins";
+   
+}
